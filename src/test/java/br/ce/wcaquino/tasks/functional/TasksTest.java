@@ -160,7 +160,7 @@ public class TasksTest {
 			//inserir tarefa
 			driver.findElement(By.id("addTodo")).click();
 			driver.findElement(By.id("task")).sendKeys("Teste via Selenium");
-			driver.findElement(By.id("dueDate")).sendKeys("15/11/2011");
+			driver.findElement(By.id("dueDate")).sendKeys("25/11/2021");
 			driver.findElement(By.id("saveButton")).click();
 			String message = driver.findElement(By.id("message")).getText();
 			Assert.assertEquals("Success!", message);
